@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:technical_test/screens/home/bloc/home_bloc.dart';
-import 'package:technical_test/screens/splash_screen.dart';
+import 'package:technical_test/screens/home/home_button.dart';
 import 'package:technical_test/widgets/name_text_widget.dart';
 
 import 'home_button_widget.dart';
@@ -57,8 +57,8 @@ class HomePage extends StatelessWidget {
                     },
                   ),
                 ),
-                const HomeButtonWidget(color: Colors.blue, text: 'Go to page 1', route: SplashScreen()),
-                const HomeButtonWidget(color: Colors.cyan, text: 'Go to page 2', route: SplashScreen()),
+                const HomeButtonWidget(button: HomeButton.page1),
+                const HomeButtonWidget(button: HomeButton.page2),
               ],
             )
           ],
