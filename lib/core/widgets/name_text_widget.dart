@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:technical_test/screens/home/bloc/home_bloc.dart';
+import '../../screens/home/bloc/home_bloc.dart';
+import '../core_importer.dart';
 
 class NameTextWidget extends StatelessWidget {
   const NameTextWidget({Key? key}) : super(key: key);

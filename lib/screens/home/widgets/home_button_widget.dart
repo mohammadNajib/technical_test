@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'home_button.dart';
+import '../home_button.dart';
 
 class HomeButtonWidget extends StatelessWidget {
   final HomeButton button;

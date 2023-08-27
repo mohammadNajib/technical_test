@@ -1,10 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:technical_test/screens/home/bloc/home_bloc.dart';
 import 'package:technical_test/screens/home/home_button.dart';
-import 'package:technical_test/widgets/name_text_widget.dart';
 
-import 'home_button_widget.dart';
+import '../../../core/core_importer.dart';
+import '../widgets/home_button_widget.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);

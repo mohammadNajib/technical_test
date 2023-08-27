@@ -15,4 +15,5 @@ export 'package:get_it/get_it.dart';
 // used a lot
 export 'api/api_provider.dart';
 export 'errors/error_importer.dart';
+export 'widgets/name_text_widget.dart';
 export 'package:technical_test/injection_container.dart';

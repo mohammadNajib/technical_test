@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:technical_test/screens/home/bloc/home_bloc.dart';
 import 'package:technical_test/screens/splash_screen.dart';
 
-import 'injection_container.dart';
+import 'core/core_importer.dart';
 
 void main() async {
   await init();

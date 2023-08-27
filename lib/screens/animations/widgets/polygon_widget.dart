@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:technical_test/screens/animations/bloc/animations_bloc.dart';
 import 'package:technical_test/screens/animations/polygons.dart';
+
+import '../../../core/core_importer.dart';
 
 class PolygonWidget extends StatelessWidget {
   final Polygons polygons;

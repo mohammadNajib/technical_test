@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:technical_test/screens/pokemon/presentation/pages/pokemon_page.dart';
 
-import '../animations/animations_page.dart';
+import '../../core/core_importer.dart';
+import '../animations/pages/animations_page.dart';
 
 enum HomeButton {
   page1(text: 'Go to page 1', route: AnimationsPage(), color: Colors.blue),

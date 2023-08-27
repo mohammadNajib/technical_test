@@ -1,9 +1,8 @@
-import 'package:technical_test/screens/animations/polygon_widget.dart';
+import 'package:technical_test/screens/animations/widgets/polygon_widget.dart';
 import 'package:technical_test/screens/animations/polygons.dart';
 
-import '../../core/core_importer.dart';
-import '../../widgets/name_text_widget.dart';
-import 'bloc/animations_bloc.dart';
+import '../../../core/core_importer.dart';
+import '../bloc/animations_bloc.dart';
 
 class AnimationsPage extends StatefulWidget {
   const AnimationsPage({Key? key}) : super(key: key);
