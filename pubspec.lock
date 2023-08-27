@@ -131,14 +131,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
-  image_fade:
-    dependency: "direct main"
-    description:
-      name: image_fade
-      sha256: "7296c9c53cd5de98e675ef1e27bdaa4035d6c3a45cf5b86094b2e545689b4ea6"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.6.2"
   lints:
     dependency: transitive
     description:
@@ -274,4 +266,4 @@ packages:
     version: "0.1.4-beta"
 sdks:
   dart: ">=3.1.0 <4.0.0"
-  flutter: ">=2.2.3"
+  flutter: ">=1.16.0"

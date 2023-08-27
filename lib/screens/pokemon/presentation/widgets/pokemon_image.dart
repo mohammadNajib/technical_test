@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart' as datz;
-import 'package:image_fade/image_fade.dart';
 
 import '../../../../core/core_importer.dart';
 import '../bloc/pokemon_bloc.dart';
@@ -30,12 +29,12 @@ class PokemonImageState extends State<PokemonImage> {
                 if (snapshot.connectionState == ConnectionState.waiting || snapshot.hasError) {
                   return const Image(image: AssetImage('assets/poke_ball.jpg'));
                 } else if (snapshot.hasData && snapshot.data != null) {
-                  return ImageFade(
+                  return FadeInImage(
                     image: NetworkImage(snapshot.data!),
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height,
-                    errorBuilder: (context, obj) => const Image(image: AssetImage('assets/poke_ball.jpg')),
-                    placeholder: const Image(image: AssetImage('assets/poke_ball.jpg')),
+                    imageErrorBuilder: (context, obj, _) => const Image(image: AssetImage('assets/poke_ball.jpg')),
+                    placeholder: const AssetImage('assets/poke_ball.jpg'),
                     fit: BoxFit.contain,
                   );
                 } else {
@@ -50,10 +49,7 @@ class PokemonImageState extends State<PokemonImage> {
   Future<String?> fetchPokemonImageUrl({required String pokemonUrl}) async {
     try {
       datz.Either either = await sl<PokemonBloc>().pokemonUseCases.getPokemonDetailsUseCase(url: pokemonUrl);
-      either.fold((failure) => null, (details) {
-        return details.sprites.frontDefault;
-      });
-      return null;
+      return either.fold((failure) => null, (details) => details.sprites.frontDefault);
     } catch (e) {
       return null;
     }

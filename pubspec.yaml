@@ -19,7 +19,6 @@ dependencies:
   get_it: ^7.6.0
   dio: ^5.3.2
   dartz: ^0.10.1
-  image_fade: ^0.6.2
 
 dev_dependencies:
   flutter_test:
