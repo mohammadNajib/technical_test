@@ -55,8 +55,8 @@ class HomePage extends StatelessWidget {
                     },
                   ),
                 ),
-                const HomeButtonWidget(button: HomeButton.page1),
-                const HomeButtonWidget(button: HomeButton.page2),
+                HomeButtonWidget(button: HomeButton.page1, ctx: context),
+                HomeButtonWidget(button: HomeButton.page2, ctx: context),
               ],
             )
           ],
